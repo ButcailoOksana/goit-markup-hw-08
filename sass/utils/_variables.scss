@@ -1,0 +1,77 @@
+//кольори//
+
+:root {
+	--title-text-color: #212121;
+	--hero-text-color: #FFFFFF;
+	--primary-text-color: #757575;
+	--btn-second-color: #188CE8;
+	--accent-color: #2196F3;
+	--background-team-color: #F5F4FA;
+	--background-color: #2F303A;
+	--background-portfolio: #E5E5E5;
+	--border-color: #ECECEC;
+	--vector-color: #000000;
+	--container-border-color: #EEEEEE;
+	--icon-color: #AFB1B8;
+}
+body {
+	font-family: Roboto, sans-serif;
+	font-style: normal;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	color: var(--title-text-color);
+	background-color: var(--hero-text-color);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+margin: 0;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.container {
+	width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: 0 auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}
+.link {
+	text-decoration: none;
+}
+
+.list {
+	list-style: none;
+	padding-left: 0;
+	margin: 0;
+}
