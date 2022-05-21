@@ -1,6 +1,14 @@
 .about {
 	margin-top: 0;
 	padding: 0 0 94px 0;
+	@media screen and (max-width: 1199px){
+		display: none;
+	}
+	
+	@media screen and (min-width: 1200px){
+		display: block;
+		
+	}
 }
 
 .about__title {
