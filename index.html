@@ -23,8 +23,16 @@
   </head>
   <body>
     <!--шапка-->
-    <header class="header">
+    <!--<header class="header">
       <div class="container header-nav">
+        <div>
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          ></button>
+          <ul></ul>
+        </div>
         <a class="header-logo link" href=""
           >Web<span class="studio">Studio</span></a
         >
@@ -71,7 +79,7 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main>-->
       <!--Герой-->
       <section class="hero">
         <div class="container">
@@ -84,7 +92,7 @@
         </div>
       </section>
       <!--Особенности-->
-      <section class="specifics">
+      <!--section class="specifics">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="feature list">
@@ -138,9 +146,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section-->
       <!--Чем занимаемся-->
-      <section class="about">
+      <!--section class="about">
         <div class="container">
           <h2 class="about__title">Чем занимаемся</h2>
           <ul class="about__list about-list list">
@@ -164,11 +172,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section-->
       <!--Наша команда-->
-      <section class="section team-section">
+      <section class="section-team">
         <div class="container">
-          <h2 class="section__title">Наша команда</h2>
+          <h2 class="section__title-team">Наша команда</h2>
           <ul class="team team-list list">
             <li class="team__item item">
               <img
@@ -360,7 +368,7 @@
       </section>
 
       <!--Постійні клієнти-->
-      <section class="section">
+     <!--<section class="section">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="client list">
@@ -408,7 +416,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
     </main>
     <footer class="footer">
       <div class="container footer-container">
@@ -430,7 +438,7 @@
               </li>
               <li class="address__item footer-item">
                 <a
-                  class="address__link footer-mail link"
+                  class="address__link mail-footer link"
                   href="mailto:info@devstudio.com "
                   >info@devstudio.com</a
                 >
@@ -446,7 +454,7 @@
           </address>
         </div>
         <div class="footer-icon">
-          <p class="footer-text">Присоединяйтесь</p>
+          <p class="footer-icon__text footer-text">Присоединяйтесь</p>
           <ul class="footer-icon-list list">
             <li class="footer-icon-item">
               <a class="footer-link-item" href="">
@@ -573,6 +581,19 @@
       </div>
     </div>
 
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu"></button>
+      <ul></ul>
+    </div>
+
     <script src="./js/modal.js"></script>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
