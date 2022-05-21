@@ -1,3 +1,18 @@
+.portfolio {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@media screen and (min-width: 480px) {
+
+	}
+	
+	@media screen and (min-width: 768px) {}
+	
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+
+	}
+}
 .filter__btn {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 500;
@@ -45,9 +60,23 @@
 }
 
 .filter {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 50px;
+	
+	@media screen and (min-width: 480px) {
+		width: 100%;
+	}
+	
+		@media screen and (min-width: 768px) {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+		}
+	
+		@media screen and (min-width: 1200px) {
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			margin-bottom: 50px;
+		}
 }
 
 .filter .filter__item:not(:last-child) {
@@ -79,10 +108,7 @@
 	margin-bottom: 0;
 }
 
-.portfolio {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
+
 
 .project-card {
 	padding: 20px 24px;
