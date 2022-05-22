@@ -2,8 +2,29 @@
 	background-color: var(--background-color);
 	padding-top: 60px;
 	padding-bottom: 60px;
+	text-align: center;
 }
-
+.footer-container {
+	//display: flex;
+	//align-items: baseline;
+	width: 100%;
+	@media screen and (max-width: 767.99px) {
+			display: block;
+			text-align: center;
+		}
+	
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+	
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			align-items: baseline;
+		}
+}
 .footer-logo {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
@@ -12,6 +33,15 @@
 	color: var(--accent-color);
 	display: inline-block;
 	margin-bottom: 20px;
+    @media screen and (max-width: 767.99px){
+
+}
+
+	@media screen and (min-width: 768px){
+		margin-left: 115px;
+	}
+
+
 }
 
 .footer-studio {
@@ -24,7 +54,20 @@ address {
 }
 
 .address {
-	width: 231px;
+	width: 232px;
+	@media screen and (max-width: 767.99px){
+		width: 100%;
+		margin-bottom: 60px;
+	}
+	@media screen and (min-width: 768px){
+		margin-left: 76px;
+		margin-bottom: 60px;
+		}
+	@media screen and (min-width: 1200px){
+	text-align: start;
+	
+	}
+	
 }
 
 .footer-address {
@@ -72,7 +115,19 @@ address {
 }
 
 .footer-icon-list {
+	@media screen and (max-width: 767.99px) {
+		display: flex;
+		justify-content: center;	}
+	
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+	}
+	
+	@media screen and (min-width: 1200px) {
 	display: flex;
+	}
+	
 }
 
 .footer-icon-item:not(:last-child) {
@@ -94,14 +149,22 @@ address {
 }
 
 .footer-icon {
-	margin-left: 70px;
+	@media screen and (max-width: 767.99px) {
+		margin-bottom: 60px;
+		}
+	
+	@media screen and (min-width: 768px) {
+		margin-right: 89px;
+		}
+	
+	@media screen and (min-width: 1200px) {
+		margin-left: 70px;
+		}
+	
 
 }
 
-.footer-container {
-	display: flex;
-	align-items: baseline;
-}
+
 
 .footer-link-item:hover,
 .footer-link-item:focus {
@@ -112,7 +175,20 @@ address {
 
 
 .mail-input-form {
-	margin-left: 93px;
+	
+
+	@media screen and (max-width: 767.99px) {
+
+		}
+	
+	@media screen and (min-width: 768px) {
+		margin-left: 166px;
+	}
+	
+	@media screen and (min-width: 1200px) {
+		margin-left: 93px;
+
+		}
 }
 
 .input-text {
@@ -126,8 +202,25 @@ address {
 }
 
 .input-form {
-	display: flex;
-	justify-content: flex-end;
+
+	@media screen and (max-width: 767.99px) {
+		display: block;
+		text-align: center;
+	}
+	
+	@media screen and (min-width: 768px) {
+		display: block;
+		text-align: center;
+
+		
+	}
+	
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		justify-content: flex-end;
+	
+		}
+	
 }
 
 .mail-input {
@@ -142,6 +235,12 @@ address {
 	background: var(--background-color);
 	color: var(--hero-text-color);
 	outline: none;
+	@media screen and (max-width: 767.99px){
+		margin-bottom: 20px;
+	}
+	@media screen and (min-width: 768px){
+		margin-bottom: 20px;
+		}
 }
 
 .footer-bg {
@@ -161,6 +260,10 @@ address {
 	color: var(--hero-text-color);
 	cursor: pointer;
 	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	@media screen and (max-width: 1199px){
+		margin: auto;
+	}
+	
 }
 
 .icon-svg-footer {
