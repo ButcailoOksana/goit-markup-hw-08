@@ -30,16 +30,14 @@
         >
 
         <button
-          type="button"
-          class="open-menu menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
+          type="button" 
+          class="menu-open-btn"
         >
-          <svg class="" width="40" height="40">
+          <svg class="mob-svg-open" width="40" height="40">
             <use href="./img/symbol-defs.svg#icon-menu-40px"></use>
           </svg>
         </button>
-        <ul></ul>
+        
 
         <nav class="header-navigation">
           <ul class="menu-nav list">
@@ -83,54 +81,68 @@
           </li>
         </ul>
       </div>
-      <div class="mob-menu">
+
+      <!--mобільне меню-->
+      <div class="mob-menu  is-hidden">
         <div class="container">
-        <button type="button" class="close-mob-menu">
-          <svg class="" width="40" height="40">
+        <div class="mob-menu-top">
+        <button type="button" class="menu-close-btn">
+          <svg class="mob-svg-close" width="40" height="40">
             <use href="./img/symbol-defs.svg#icon-close-40px"></use>
           </svg>
         </button>
 
         <nav class="mob-navigation">
-          <ul class="menu-nav list">
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link current" href="./index.html"
+          <ul class="mob-menu-nav list">
+            <li class="mob-menu-nav__item">
+              <a class="mob-menu-nav__link link current" href="./index.html"
                 >Студия</a
               >
             </li>
-            <li class="menu-nav__item">
-              <a class="menu-nav__link link" href="./portfolio.html"
+            <li class="mob-menu-nav__item">
+              <a class="mob-menu-nav__link link" href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
-            <li class="menu-nav__item">
-              <a href="" class="menu-nav__link link">Контакты</a>
+            <li class="mob-menu-nav__item">
+              <a href="" class="mob-menu-nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
+        </div>
+
         <ul class="mob-contact">
-          <li class="header-contact__item">
+          <li class="mob-contact__item">
             <a
-              class="header-contact__link header-mail link"
+              class="mob-contact__link mob-header-mail link"
               href="mailto:info@devstudio.com "
             >
-              <svg class="header__icon mail" width="16" height="12">
-                <use href="./img/symbol-defs.svg#icon-mail"></use>
-              </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="header-contact__item">
+          <li class="mob-contact__item">
             <a
-              class="header-contact__link header-tel link"
+              class="mob-contact__link mob-header-tel link"
               href="tel:+380961111111"
             >
-              <svg class="header__icon tel" width="10" height="15">
-                <use href="./img/symbol-defs.svg#icon-smartphone3"></use>
-              </svg>
               +38 096 111 11 11</a
             >
           </li>
+        </ul>
+        <ul class="mob-social">
+          <li class="mob-social-item ">
+            <a href=""  class="mob-social-link" target="_blank" rel="noopener norefferer nofollow" >Instagram</a>
+          </li>
+          <li class="mob-social-item">
+            <a  href=""  class="mob-social-link" target="_blank" rel="noopener norefferer nofollow">Twitter</a>
+          </li>
+          <li class="mob-social-item">
+            <a  href=""  class="mob-social-link" target="_blank" rel="noopener norefferer nofollow">Facebook</a>
+          </li>
+          <li class="mob-social-item">
+            <a  href=""  class="mob-social-link" target="_blank" rel="noopener norefferer nofollow">LinkedIn</a>
+          </li>
+
         </ul>
       </div>
 
@@ -721,8 +733,8 @@
       </div>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu"></button>
+    <div class="menu-container "js-menu-container id="mobile-menu">
+      <button  type="button" js-close-menu class="menu-toggle "></button>
       <ul></ul>
     </div>
 
@@ -734,6 +746,6 @@
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
     ></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
