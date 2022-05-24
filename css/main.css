@@ -187,6 +187,7 @@ header a {
   .header-contact {
     display: block;
     margin-left: auto;
+    text-align: start;
   }
 }
 
@@ -1052,9 +1053,16 @@ header a {
   display: inline-block;
 }
 
+@media screen and (min-width: 480px) {
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .footer-logo {
     margin-left: 115px;
+    margin-bottom: 20px;
   }
 }
 
@@ -1067,7 +1075,7 @@ header a {
 
 @media screen and (max-width: 767.99px) {
   .footermain {
-    width: 232px;
+    text-align: center;
   }
 }
 
