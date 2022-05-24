@@ -6,8 +6,7 @@
 	}
 	
 	@media screen and (min-width: 1200px){
-		display: block;
-		margin-top: 94px;
+		width: 100%;
 		
 	}
 }
@@ -23,6 +22,7 @@
 
 .about__list {
 	display: flex;
+	justify-content: center;
 }
 
 .about__list>.item:not(:first-child) {

@@ -1,11 +1,20 @@
 .header-navigation{
-	display: none;
+	
+	@media screen and (max-width: 768px) {
+		display: none;
+	}
+		@media screen and (min-width: 768px) {
+
+		}
+
 }
 .header{
 	@media screen and (min-width: 768px) {
 	}
 	
 	@media screen and (min-width: 1200px) {
+		box-sizing: border-box;
+}
 }
 .header .container {
 	display: flex;
@@ -13,6 +22,19 @@
 }
 
 .header-logo {
+@media screen and (max-width: 1199px){
+	font-size: 24px;
+	line-height: 1.17;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	font-family: Raleway, sans-serif;
+	color: var(--accent-color);
+	font-weight: 700;
+	font-size: 26px;
+	font-style: normal;
+	margin-right: 93px;
+	}
+@media screen and (min-width: 1200px){
 	padding-top: 24px;
 	padding-bottom: 24px;
 	font-family: Raleway, sans-serif;
@@ -22,6 +44,8 @@
 	font-style: normal;
 	line-height: 1.19;
 	margin-right: 93px;
+		}
+	
 
 }
 
@@ -42,9 +66,9 @@
 	color: var(--accent-color);
 }
 
-//header a {
-	//padding: 24px 0px;
-//}
+header a {
+	padding: 24px 0px;
+}
 
 .menu-nav {
 	display: flex;
@@ -79,18 +103,28 @@
 }
 
 .header-contact {
-	display: none;
-	list-style: none;
-	padding-left: 0;
-	margin-left: auto;
+	@media screen and (max-width: 767px) {
+			display: none;
+		}
+	@media screen and (min-width: 768px) {
+			display: block;
+			margin-left: auto;
+			
+		}
+		@media screen and (min-width: 1200px) {
+			display: flex;
+			justify-content: center;
+			margin-left: auto;
+			
+			}
 	
-	margin-bottom: 0px;
-	margin-top: 0px;
 }
 //display: flex;
 
 .header-contact .header-contact__item+.header-contact__item {
-	margin-left: 50px;
+	@media screen and (min-width: 1200px){
+		margin-left: 30px;}
+	
 }
 
 .header-nav {
@@ -99,9 +133,13 @@
 }
 
 .header-mail {
+	@media screen and (max-width: 1199px){
+	margin-bottom: 10px;
+	}
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -147,6 +185,12 @@
 .header-contact__link:hover,
 .header-contact__link:focus {
 	fill: var(--accent-color);
+}
+.header-contact__link{
+	@media screen and (max-width: 1199px){
+		padding: 0;
+	}
+
 }
 
 .link {
