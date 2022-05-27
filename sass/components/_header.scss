@@ -3,19 +3,21 @@
 	@media screen and (max-width: 767px) {
 		display: none;
 	}
-		@media screen and (min-width: 768px) {
+	@media screen and (min-width: 768px) {
 
 		}
 
 }
+
+/*position: fixed;transform: translate(-50%, 0%);*/
 .header{
-	border-bottom: 1px solid #ECECEC;
+	border-bottom: 0px solid #ECECEC;
 		background: #FFFFFF;
 		width: 100%;
-		position: fixed;
+		
 		top: 0%;
 		left: 50%;
-		transform: translate(-50%, 0%);
+		
 		z-index: 1;
 }
 .header{
@@ -254,28 +256,32 @@ header a {
 	}
 	
 }
-
+/*МОБІЛЬНЕ МЕНЮ*/
 .mob-menu{
 	@media screen and (min-width: 480px) {
 	}
 	
-	position: fixed;
+	position: absolute;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
 	background-color: #ffffff;
-	padding-top: 48px;
-	padding-bottom: 48px;
+	padding: 48px 40px;
 	.container{
 		display: flex;
 		flex-direction: column;
+		-webkit-box-pack:justify ;
+
 		height: 100%;
 		justify-content: space-between;
 		align-items: flex-start;
 		overflow-y: auto;
 	}
+}
+.mob-menu.is-open{
+	transform: translateX(0%);
 }
 .mob-menu-top{
 	width: 100%;
@@ -288,7 +294,10 @@ header a {
 }
 .mob-navigation{
 	display: block;
-	margin-left: 40px;
+}
+
+.mob-menu-nav__item{
+	position: relative;
 }
 .mob-menu-nav__link{
 		font-style: normal;
@@ -308,25 +317,34 @@ header a {
 	color: var(--accent-color);
 }
 .mob-contact{
+	margin-bottom: 64px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	align-items: center;
+
 	display:block;
 	list-style: none;
 	padding-left: 0;
-	margin-left: 40px;
 }
 .mob-header-mail{
-		margin-right: 40px;
-		font-weight: 500;
-		font-size: 34px;
-		line-height: 1.18;
-		letter-spacing: 0.02em;
-		color: var(--accent-color);
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: var(--primary-text-color);
+		
 }
 .mob-header-tel{
 	font-weight: 500;
 	font-size: 24px;
 	line-height: 1.17;
 	letter-spacing: 0.02em;
-	color: var(--primary-text-color);
+	color: var(--accent-color);
+	padding-top: 0px;
+	padding-bottom: 0px;
+
 }
 	
 	.mob-contact .mob-contact__item:not(:first-child) {
@@ -335,19 +353,16 @@ header a {
 
 .mob-social{
 	display: flex;
-	margin-left: 40px;
-	justify-content: center;
 }
 .mob-social-link{
-	padding-right: 10px;
-	padding-left: 10px;
+	font-weight: 500;
 	font-size: 18px;
 	line-height: 1.22;
 	letter-spacing: 0.02em;
 	color:var(--accent-color) ;
-	transform: rotate(90deg);
 }
 .mob-social .mob-social-item:not(:last-child){
+	padding-right: 10px;
 	border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 .no-scroll{overflow: hidden;}
