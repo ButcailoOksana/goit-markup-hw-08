@@ -261,14 +261,19 @@ header a {
 	@media screen and (min-width: 480px) {
 	}
 	
-	position: absolute;
+	position: fixed;
 	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
 	background-color: #ffffff;
-	padding: 48px 40px;
+	padding-top: 48px;
+	padding-bottom: 48px;
+	padding-left: 40px;
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0%);
 	.container{
 		display: flex;
 		flex-direction: column;
@@ -277,6 +282,7 @@ header a {
 		height: 100%;
 		justify-content: space-between;
 		align-items: flex-start;
+		overflow-x: hidden;
 		overflow-y: auto;
 	}
 }
@@ -365,4 +371,9 @@ header a {
 	padding-right: 10px;
 	border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
+
+
+.mob-social-item + .mob-social-item{ margin-left: 20px;}
+
+
 .no-scroll{overflow: hidden;}

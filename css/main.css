@@ -358,14 +358,19 @@ header a {
 
 /*МОБІЛЬНЕ МЕНЮ*/
 .mob-menu {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: #ffffff;
-  padding: 48px 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
 }
 
 .mob-menu .container {
@@ -375,6 +380,7 @@ header a {
   height: 100%;
   justify-content: space-between;
   align-items: flex-start;
+  overflow-x: hidden;
   overflow-y: auto;
 }
 
@@ -469,6 +475,10 @@ header a {
 .mob-social .mob-social-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mob-social-item + .mob-social-item {
+  margin-left: 20px;
 }
 
 .no-scroll {
@@ -1454,9 +1464,24 @@ address {
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 479px) {
   .modal {
-    max-width: 450px;
+    width: 90vw;
+    height: 90vh;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 528px;
+    height: 581px;
   }
 }
 
@@ -1837,7 +1862,7 @@ label {
 
 @media screen and (max-width: 767px) {
   .filter__item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 
@@ -1847,6 +1872,7 @@ label {
   border-right: 1px solid var(--container-border-color);
   border-left: 1px solid var(--container-border-color);
   border-bottom: 1px solid var(--container-border-color);
+  flex-grow: 1;
 }
 
 .line-portfolio {
@@ -1864,6 +1890,9 @@ label {
 }
 
 .project__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
