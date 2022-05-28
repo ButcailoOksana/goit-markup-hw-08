@@ -21,11 +21,7 @@
 	
 	
 	&__item{
-		@media screen and (min-width: 480px) {
-
-			//&:not(:last-child) {
-			//margin-bottom: 30px;} 
-			}
+		 
 		
 		@media screen and (min-width: 768px) and (max-width: 1199.99px) {
 			width: 354px;
@@ -83,6 +79,9 @@
 	}
 }
 
+
+
+
 .specifics{
 
 	margin-top: 0;
@@ -95,7 +94,9 @@
 		}
 }
 
-/*.feature>.feature__item:not(:first-child) {
-	margin-left: 30px;
-}*/
+.feature__item:not(:last-child) {
+	@media screen and (max-width: 767px){
+	margin-bottom: 30px;
+	}
+}
 

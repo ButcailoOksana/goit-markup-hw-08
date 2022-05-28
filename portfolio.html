@@ -85,12 +85,14 @@
             <nav class="mob-navigation">
               <ul class="mob-menu-nav list">
                 <li class="mob-menu-nav__item">
-                  <a class="mob-menu-nav__link link current" href="./index.html"
+                  <a class="mob-menu-nav__link link" href="./index.html"
                     >Студия</a
                   >
                 </li>
                 <li class="mob-menu-nav__item">
-                  <a class="mob-menu-nav__link link" href="./portfolio.html"
+                  <a
+                    class="mob-menu-nav__link link current"
+                    href="./portfolio.html"
                     >Портфолио</a
                   >
                 </li>
@@ -100,63 +102,64 @@
               </ul>
             </nav>
           </div>
-
-          <ul class="mob-contact">
-            <li class="mob-contact__item">
-              <a
-                class="mob-contact__link mob-header-mail link"
-                href="mailto:info@devstudio.com "
-              >
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="mob-contact__item">
-              <a
-                class="mob-contact__link mob-header-tel link"
-                href="tel:+380961111111"
-              >
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-social">
-            <li class="mob-social-item">
-              <a
-                href=""
-                class="mob-social-link"
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="mob-social-item">
-              <a
-                href=""
-                class="mob-social-link"
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                >Twitter</a
-              >
-            </li>
-            <li class="mob-social-item">
-              <a
-                href=""
-                class="mob-social-link"
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                >Facebook</a
-              >
-            </li>
-            <li class="mob-social-item">
-              <a
-                href=""
-                class="mob-social-link"
-                target="_blank"
-                rel="noopener norefferer nofollow"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+          <div class="mob-menu-container">
+            <ul class="mob-contact">
+              <li class="mob-contact__item">
+                <a
+                  class="mob-contact__link mob-header-tel link"
+                  href="tel:+380961111111"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact__item">
+                <a
+                  class="mob-contact__link mob-header-mail link"
+                  href="mailto:info@devstudio.com "
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-social">
+              <li class="mob-social-item">
+                <a
+                  href=""
+                  class="mob-social-link"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mob-social-item">
+                <a
+                  href=""
+                  class="mob-social-link"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >Twitter</a
+                >
+              </li>
+              <li class="mob-social-item">
+                <a
+                  href=""
+                  class="mob-social-link"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mob-social-item">
+                <a
+                  href=""
+                  class="mob-social-link"
+                  target="_blank"
+                  rel="noopener norefferer nofollow"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -197,16 +200,11 @@
                       ./img/portfolio/tab/tab-technokrjak2x.jpg 708w,
                       ./img/portfolio/mob/mob-tehnokrjar2x.jpg  900w
                     "
-                    scr="./img/portfolio/desktop/technokrjak.jpg"
+                    scr="./img/portfolio/tehnokrjar.jpg"
                     alt="restaurantseafoo "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
 
-                  <!--img
-                    src="./img/portfolio/tehnokrjar.jpg "
-                    alt="tehnokrjar"
-                    width="370"
-                  /-->
                   <p class="project__text overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -231,9 +229,9 @@
                       ./img/portfolio/tab/tab-posternew2x.jpg 708w,
                       ./img/portfolio/mob/mob-posternew2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/posternew.jpg"
-                    alt="restaurantseafoo "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    scr="./img/portfolio/posternew.jpg"
+                    alt="posternew "
+                    sizes=" (max-width: 1199px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
 
                   <!--img
@@ -267,9 +265,9 @@
                       ./img/portfolio/tab/tab-restaurantseafood2x.jpg 708w,
                       ./img/portfolio/mob/mob-restaurantseafood2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/restaurantseafood1x.jpg"
+                    scr="./img/portfolio/restaurantseafood.jpg"
                     alt="restaurantseafoo "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
 
                   <!--<img
@@ -301,9 +299,9 @@
                       ./img/portfolio/tab/tab-prime2x.jpg 708w,
                       ./img/portfolio/mob/mob-prime2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/prime1x.jpg"
+                    scr="./img/portfolio/proektprime.jpg"
                     alt="prime "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
 
                   <!--img
@@ -335,9 +333,9 @@
                       ./img/portfolio/tab/tab-proektboxes2x.jpg 708w,
                       ./img/portfolio/mob/mob-boxes2x.jpg       900w
                     "
-                    scr="./img/portfolio/desktop/proektboxes1x.jpg"
+                    scr="./img/portfolio/proektboxes.jpg"
                     alt="proektboxes "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
                   <!--img
                     src="./img/portfolio/proektboxes.jpg"
@@ -368,9 +366,9 @@
                       ./img/portfolio/tab/tab-nspiration2x.jpg  708w,
                       ./img/portfolio/mob/mob-inspiration2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/nspiration1x.jpg"
+                    scr="./img/portfolio/inspiration.jpg"
                     alt="nspiration "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
                   <!--img
                     src="./img/portfolio/inspiration.jpg"
@@ -403,9 +401,9 @@
                       ./img/portfolio/tab/tab-limitededition2x.jpg 708w,
                       ./img/portfolio/mob/mob-limitededition2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/limitededition1x.jpg"
+                    scr="./img/portfolio/limitededition.jpg"
                     alt="limitededition "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
                   <!--img
                     src="./img/portfolio/limitededition.jpg"
@@ -436,9 +434,9 @@
                       ./img/portfolio/tab/tab-lab2x.jpg 708w,
                       ./img/portfolio/mob/mob-lab2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/lab1x.jpg"
+                    scr="./img/portfolio/lab.jpg"
                     alt="lab "
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
 
                   <!--img src="./img/portfolio/lab.jpg" alt="lab" width="370" /-->
@@ -466,9 +464,9 @@
                       ./img/portfolio/tab/tab-growingbusiness2x.jpg 708w,
                       ./img/portfolio/mob/mob-growingbusiness2x.jpg 900w
                     "
-                    scr="./img/portfolio/desktop/growingbusiness1x.jpg"
+                    scr="./img/portfolio/growingbusiness.jpg"
                     alt="growingbusiness"
-                    sizes=" (min-width: 1200) 370px, (min-width: 768) 354px, (min-width: 480) 450px"
+                    sizes=" (max-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px"
                   />
                   <!--img
                     src="./img/portfolio/growingbusiness.jpg"
