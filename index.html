@@ -618,7 +618,7 @@
 
           <label class="form-element-label" for="name">Имя</label>
           <span class="icon-wrapper">
-            <input class="form-input input" type="text" name="name" />
+            <input class="form-input input" type="text" name="name" required/>
             <svg class="form-icon-svg" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-person-black-18dp"></use>
             </svg>
@@ -626,7 +626,7 @@
 
           <label for="tel" class="form-element-label">Телефон</label>
           <span class="icon-wrapper">
-            <input class="form-input input" type="tel" name="tel" />
+            <input class="form-input input" type="tel" name="tel" required/>
             <svg class="form-icon-svg" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-phone"></use>
             </svg>
@@ -634,7 +634,7 @@
 
           <label for="email" class="form-element-label">Пошта</label>
           <span class="icon-wrapper">
-            <input class="form-input input" type="email" name="email" />
+            <input class="form-input input" type="email" name="email" required/>
             <svg class="form-icon-svg" width="18" height="18">
               <use href="./img/symbol-defs.svg#icon-email"></use>
             </svg>
@@ -659,6 +659,7 @@
               type="checkbox"
               name="user-policy"
               value=""
+              required
             />
             
             <label class="checkbox-label" for="user-policy">

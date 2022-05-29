@@ -19,10 +19,12 @@
 	cursor: pointer;
 	background-color: var(--background-team-color);
 	border: 0 solid transparent;
+	border: none;
 	border-radius: 4px;
 	padding: 6px 22px;
-	margin: 4px;
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+	color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 
 }
 
@@ -69,7 +71,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-			margin-bottom: 50px;
+			margin-bottom: 30px;
 		}
 	
 		@media screen and (min-width: 1200px) {
@@ -79,12 +81,20 @@
 			justify-content: center;
 		}
 }
+.filter .filter__item:not(:last-child){
+		margin-right: 8px;
+		@media screen and (max-width: 768px){
+			margin-bottom: 15px;
 
-
-.filter__item {
-	display: flex;
-	align-items: center;
+		}
+	
 }
+
+
+// .filter__item {
+	// display: flex;
+	// align-items: center;
+// }
 
 .project-list{
 	@media screen and (min-width: 768px){
